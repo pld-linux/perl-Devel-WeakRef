@@ -1,12 +1,13 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Devel
 %define	pnam	WeakRef
-Summary:	Devel::WeakRef perl module
-Summary(pl):	Modu³ perla Devel::WeakRef
+Summary:	Devel::WeakRef - weak references (not reference-counted)
+Summary(pl):	Devel::WeakRef - s³abe odwo³ania (nie zliczane przez licznik odwo³añ)
 Name:		perl-Devel-WeakRef
 Version:	0.003
 Release:	8
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	090bd51f8be8d0ce9b466f03cb538bed
@@ -18,13 +19,17 @@ Requires:	perl-Test-Helper
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Devel::WeakRef perl module allows you to use weak references to any
+Devel::WeakRef Perl module allows you to use weak references to any
 reference-valued variable (not reference-counted), dereferenced with a
 method call, with a normal scalar dereference, or as part of a hash
 lookup.
 
 %description -l pl
-Modu³ perla Devel::WeakRef.
+Modu³ Perla Devel::WeakRef umo¿liwia s³abe odwo³ania do dowolnych
+zmiennych o warto¶ciach referencyjnych (nie s± one zliczane przez
+licznik odwo³añ). Wy³uskiwanie odbywa siê poprzez wywo³anie metody ze
+zwy³ym skalarnym wy³uskaniem. S³abe odwo³ania mog± te¿ byæ u¿ywane
+jako czê¶æ przeszukiwania hasha.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
