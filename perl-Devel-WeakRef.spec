@@ -17,7 +17,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	090bd51f8be8d0ce9b466f03cb538bed
 Patch0:		%{name}-perl-5.6.patch
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Test-Helper
 Requires:	perl-Test-Helper
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
