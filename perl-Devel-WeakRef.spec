@@ -38,14 +38,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README TODO CHANGES
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README TODO CHANGES
 %{perl_sitearch}/Devel/WeakRef.pm
 %dir %{perl_sitearch}/auto/Devel/WeakRef
 %{perl_sitearch}/auto/Devel/WeakRef/WeakRef.bs
