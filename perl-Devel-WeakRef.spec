@@ -3,7 +3,7 @@ Summary:	Devel-WeakRef perl module
 Summary(pl):	Modu³ perla Devel-WeakRef
 Name:		perl-Devel-WeakRef
 Version:	0.003
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
