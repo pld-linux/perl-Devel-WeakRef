@@ -32,7 +32,7 @@ Modu³ perla Devel::WeakRef.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
