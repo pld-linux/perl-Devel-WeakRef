@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Devel
 %define	pnam	WeakRef
-Summary:	Devel-WeakRef perl module
-Summary(pl):	Modu³ perla Devel-WeakRef
+Summary:	Devel::WeakRef perl module
+Summary(pl):	Modu³ perla Devel::WeakRef
 Name:		perl-Devel-WeakRef
 Version:	0.003
 Release:	7
@@ -17,13 +17,13 @@ Requires:	perl-Test-Helper
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Devel-WeakRef perl module allows you to use weak references to any
+Devel::WeakRef perl module allows you to use weak references to any
 reference-valued variable (not reference-counted), dereferenced with a
 method call, with a normal scalar dereference, or as part of a hash
 lookup.
 
 %description -l pl
-Modu³ perla Devel-WeakRef.
+Modu³ perla Devel::WeakRef.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
