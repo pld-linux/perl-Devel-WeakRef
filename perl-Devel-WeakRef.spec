@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Devel
 %define	pnam	WeakRef
-%include	/usr/lib/rpm/macros.perl
 Summary:	Devel-WeakRef perl module
 Summary(pl):	Modu³ perla Devel-WeakRef
 Name:		perl-Devel-WeakRef
 Version:	0.003
-Release:	6
-
+Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -27,7 +26,7 @@ lookup.
 Modu³ perla Devel-WeakRef.
 
 %prep
-%setup -q -n Devel-WeakRef-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 %patch0 -p1
 
 %build
