@@ -1,0 +1,11 @@
+--- Devel-WeakRef-0.003/WeakRef.xs~	Sat Sep 20 21:42:05 1997
++++ Devel-WeakRef-0.003/WeakRef.xs	Wed Apr 18 03:47:59 2001
+@@ -116,7 +116,7 @@
+  if (SvROK(value)) {
+    RETVAL=newRV_inc(SvRV(value));
+  } else {
+-   RETVAL=newSVsv(&sv_undef);
++   RETVAL=newSVsv(&PL_sv_undef);
+  }
+ OUTPUT:
+  RETVAL
