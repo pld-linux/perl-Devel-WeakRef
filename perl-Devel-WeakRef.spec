@@ -30,7 +30,7 @@ Modu³ perla Devel::WeakRef.
 %patch0 -p1
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install
