@@ -32,7 +32,7 @@ lookup.
 Modu³ Perla Devel::WeakRef umo¿liwia s³abe odwo³ania do dowolnych
 zmiennych o warto¶ciach referencyjnych (nie s± one zliczane przez
 licznik odwo³añ). Wy³uskiwanie odbywa siê poprzez wywo³anie metody ze
-zwy³ym skalarnym wy³uskaniem. S³abe odwo³ania mog± te¿ byæ u¿ywane
+zwyk³ym skalarnym wy³uskaniem. S³abe odwo³ania mog± te¿ byæ u¿ywane
 jako czê¶æ przeszukiwania hasha.
 
 %prep
