@@ -9,6 +9,7 @@ Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Devel/Devel-WeakRef-%{version}.tar.gz
+Patch0:		%{name}-perl-5.6.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Test-Helper
@@ -26,6 +27,7 @@ Modu³ perla Devel-WeakRef.
 
 %prep
 %setup -q -n Devel-WeakRef-%{version}
+%patch0 -p1
 
 %build
 perl Makefile.PL
