@@ -5,12 +5,12 @@ Summary:	Devel::WeakRef perl module
 Summary(pl):	Modu³ perla Devel::WeakRef
 Name:		perl-Devel-WeakRef
 Version:	0.003
-Release:	7
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 Patch0:		%{name}-perl-5.6.patch
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Test-Helper
 Requires:	perl-Test-Helper
@@ -30,7 +30,8 @@ Modu³ perla Devel::WeakRef.
 %patch0 -p1
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -44,8 +45,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README TODO CHANGES
-%{perl_sitearch}/Devel/WeakRef.pm
-%dir %{perl_sitearch}/auto/Devel/WeakRef
-%{perl_sitearch}/auto/Devel/WeakRef/WeakRef.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Devel/WeakRef/WeakRef.so
+%{perl_vendorarch}/Devel/WeakRef.pm
+%dir %{perl_vendorarch}/auto/Devel/WeakRef
+%{perl_vendorarch}/auto/Devel/WeakRef/WeakRef.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Devel/WeakRef/WeakRef.so
 %{_mandir}/man3/*
