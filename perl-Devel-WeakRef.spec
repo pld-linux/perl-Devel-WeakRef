@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Devel
-%define	pnam	WeakRef
+%define		pdir	Devel
+%define		pnam	WeakRef
 Summary:	Devel::WeakRef - weak references (not reference-counted)
 Summary(pl):	Devel::WeakRef - s³abe odwo³ania (nie zliczane przez licznik odwo³añ)
 Name:		perl-Devel-WeakRef
