@@ -14,7 +14,7 @@ BuildRequires:	perl-Test-Helper
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 Requires:	perl-Test-Helper
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Devel-WeakRef perl module allows you to use weak references to any 
