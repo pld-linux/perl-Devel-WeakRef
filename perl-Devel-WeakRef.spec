@@ -6,7 +6,7 @@
 %define		pdir	Devel
 %define		pnam	WeakRef
 Summary:	Devel::WeakRef - weak references (not reference-counted)
-Summary(pl):	Devel::WeakRef - s≥abe odwo≥ania (nie zliczane przez licznik odwo≥aÒ)
+Summary(pl.UTF-8):   Devel::WeakRef - s≈Çabe odwo≈Çania (nie zliczane przez licznik odwo≈Ça≈Ñ)
 Name:		perl-Devel-WeakRef
 Version:	0.003
 Release:	9
@@ -28,12 +28,12 @@ reference-valued variable (not reference-counted), dereferenced with a
 method call, with a normal scalar dereference, or as part of a hash
 lookup.
 
-%description -l pl
-Modu≥ Perla Devel::WeakRef umoøliwia s≥abe odwo≥ania do dowolnych
-zmiennych o warto∂ciach referencyjnych (nie s± one zliczane przez
-licznik odwo≥aÒ). Wy≥uskiwanie odbywa siÍ poprzez wywo≥anie metody ze
-zwyk≥ym skalarnym wy≥uskaniem. S≥abe odwo≥ania mog± teø byÊ uøywane
-jako czÍ∂Ê przeszukiwania hasha.
+%description -l pl.UTF-8
+Modu≈Ç Perla Devel::WeakRef umo≈ºliwia s≈Çabe odwo≈Çania do dowolnych
+zmiennych o warto≈õciach referencyjnych (nie sƒÖ one zliczane przez
+licznik odwo≈Ça≈Ñ). Wy≈Çuskiwanie odbywa siƒô poprzez wywo≈Çanie metody ze
+zwyk≈Çym skalarnym wy≈Çuskaniem. S≈Çabe odwo≈Çania mogƒÖ te≈º byƒá u≈ºywane
+jako czƒô≈õƒá przeszukiwania hasha.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
