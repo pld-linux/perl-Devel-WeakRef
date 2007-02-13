@@ -6,7 +6,7 @@
 %define		pdir	Devel
 %define		pnam	WeakRef
 Summary:	Devel::WeakRef - weak references (not reference-counted)
-Summary(pl.UTF-8):   Devel::WeakRef - słabe odwołania (nie zliczane przez licznik odwołań)
+Summary(pl.UTF-8):	Devel::WeakRef - słabe odwołania (nie zliczane przez licznik odwołań)
 Name:		perl-Devel-WeakRef
 Version:	0.003
 Release:	9
