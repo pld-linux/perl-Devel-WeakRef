@@ -9,7 +9,7 @@ Summary:	Devel::WeakRef - weak references (not reference-counted)
 Summary(pl.UTF-8):	Devel::WeakRef - słabe odwołania (nie zliczane przez licznik odwołań)
 Name:		perl-Devel-WeakRef
 Version:	0.003
-Release:	10
+Release:	11
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
