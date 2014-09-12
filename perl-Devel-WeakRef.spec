@@ -60,6 +60,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README TODO CHANGES
 %{perl_vendorarch}/Devel/WeakRef.pm
 %dir %{perl_vendorarch}/auto/Devel/WeakRef
-%{perl_vendorarch}/auto/Devel/WeakRef/WeakRef.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Devel/WeakRef/WeakRef.so
 %{_mandir}/man3/*
