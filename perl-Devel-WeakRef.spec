@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Devel
 %define		pnam	WeakRef
+%include	/usr/lib/rpm/macros.perl
 Summary:	Devel::WeakRef - weak references (not reference-counted)
 Summary(pl.UTF-8):	Devel::WeakRef - słabe odwołania (nie zliczane przez licznik odwołań)
 Name:		perl-Devel-WeakRef
@@ -16,9 +16,10 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	090bd51f8be8d0ce9b466f03cb538bed
 Patch0:		%{name}-perl-5.6.patch
-BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/Devel-WeakRef/
 BuildRequires:	perl-Test-Helper
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-Test-Helper
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
