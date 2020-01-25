@@ -4,7 +4,6 @@
 
 %define		pdir	Devel
 %define		pnam	WeakRef
-%include	/usr/lib/rpm/macros.perl
 Summary:	Devel::WeakRef - weak references (not reference-counted)
 Summary(pl.UTF-8):	Devel::WeakRef - słabe odwołania (nie zliczane przez licznik odwołań)
 Name:		perl-Devel-WeakRef
